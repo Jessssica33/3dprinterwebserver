@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>3dPrinterWebServer</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <header class="w3-container w3-black">
+        <h1 class="w3-container w3-jumbo">Welcome to 3D Printer Controller</h1>
+        <h6>Lab 2227</h6>
+    </header>
+    <div class="w3-container">
+        <h3>1. Please upload your 3D models to server</h3>
+        <P>If you want to choose model from source library, you can skip this step</P>
+        <form  method="post" enctype="multipart/form-data"  action="/">
+            <input  class="inputfile" id="file" type="file" name="filename"/>
+            <input class="w3-button w3-light-gray" type="submit" name="submit" id="submit" value="upload"/>
+        </form>
+    </div>
+    <div class="w3-container">
+        <h3>2. Please select the model which you would like to print.</h3>
+        <p>You can skip this step, if you just want to print model which you uploaded</p>
+        <button class="w3-button w3-light-gray" id="showFile" >Show All Templates</button>
+        <ul class="w3-ul" id="fileul"></ul>
+    </div>
+    <div class="w3-container">
+        <h3>3. Click button and start your print</h3>
+        <button class="w3-button w3-light-gray" id="print">Start print</button>
+    </div>
+    <!--div class="w3-container">
+        <p>4. Instruction</p>
+        <p>The web server located in a raspberry 3. It supplies printing 3D models service to user. The print tasks are execute by printrun.</p>
+        <p>You can use any 3D modeling software to make a 3d model, and print by this web server. </p>
+    </div-->
+    <br>
+    <div class="clearfix"></div>
+    <div class="w3-container">
+        <div>
+            <!--picture from http://www.cadnav.com/3d-models/model-42169.html -->
+            <img class="section" src="img/i.jpg"/>
+        </div>
+        <div>
+            <!--picture from https://3docean.net/item/bugatti-veyron-164-3d-model-with-shaders/2877768 -->
+            <img class="section" src="img/car.jpg"/>
+        </div>
+        <div>
+            <!-- picture from https://cgaxis.com/product/champagne-22/ -->
+            <img class="section" src="img/wine.jpg"/>
+        </div>
+    </div>
+    <footer class="w3-container">
+        <p>Any technology problems, please contract<br>
+        sswu@ksu.edu,  yihong@ksu.edu<br>
+        Kansas State University</p>
+    </footer>
+</div>
+<p style="text-align: center; padding: 0px;">&copy; 3D Web Server, 2018.</p>
+</body>
+</html>

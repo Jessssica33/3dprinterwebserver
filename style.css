@@ -1,0 +1,53 @@
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+body {
+    overflow: auto;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1020px;
+    width: 98%;
+    background: lightgray;
+    border: 0px solid #878E63;
+    border-radius:2px;
+    box-shaow: 0 0 10px 0px #555;
+}
+
+h6 {
+    text-align: right;
+    color: gray;
+    margin-right: 5%;
+}
+h3 {
+    /*font-family: 'Dancing Script', cursive;*/
+    font-size: 160%;
+    text-align: left;
+    color: black;
+}
+.inputfile {
+    font-size: 1.25em;
+    /*font-weight: 700;*/
+    color: white;
+    display: inline-block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.section {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+    text-align: center;
+}
+
+footer {
+    background: darkgray;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer p{
+    text-align: center;
+}
